@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Result</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Image Processing Result</h1>
+        <img src="{{ MEDIA_URL }}{{ processed_image_path }}" alt="Processed Image">
+        <br>
+        <a href="{% url 'image_upload' %}">Upload another image</a>
+    </div>
+</body>
+</html>
